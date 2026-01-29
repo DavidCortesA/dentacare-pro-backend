@@ -580,6 +580,7 @@ export interface ApiDoctorDoctor extends Struct.CollectionTypeSchema {
     phone: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     schedule: Schema.Attribute.JSON;
+    slug: Schema.Attribute.UID<'name'>;
     specialty: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

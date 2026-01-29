@@ -64,6 +64,10 @@
     },
     "schedule": {
       "type": "json"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
